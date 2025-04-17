@@ -1,0 +1,339 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="utf-8">
+
+
+
+<title>工房情報</title>
+
+<link href="zyouhou1.css" rel="stylesheet" type="text/css">
+<link href="all.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+<!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+
+<script>
+
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+
+    // アクセシビリティ対応
+    const isOpen = hamburger.classList.contains('active');
+    hamburger.setAttribute('aria-expanded', isOpen);
+    nav.setAttribute('aria-hidden', !isOpen);
+  });
+
+  // メニューの外側をクリックした時の処理
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav') && !e.target.closest('.hamburger') && nav.classList.contains('active')) {
+      hamburger.classList.remove('active');
+      nav.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', false);
+      nav.setAttribute('aria-hidden', true);
+    }
+  });
+});
+</script>
+
+
+</head>
+
+
+
+<body>
+
+<p class="beni">
+ <a href="工房top5.html"><img alt="ロゴの画像" src="img/logo7.png"></a>
+</p>
+
+
+<div class="header">
+  <button class="hamburger" aria-label="メニュー" aria-controls="nav-menu" aria-expanded="false">
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
+  </button>
+
+  <nav id="nav-menu" class="nav" aria-hidden="true">
+
+
+    <ul class="nav__list">
+      <li class="nav__item"><a href="https://umorungit.github.io/Hundmadeko-bo-Beni/" class="nav__link">TOP</a></li>
+      <li class="nav__item"><a href="https://umorungit.github.io/Hundmadeko-bo-Beni-omoi/" class="nav__link">工房Beniの想い</a></li>
+      <li class="nav__item"><a href="https://umorungit.github.io/Hundmadeko-bo-Beni-scene/" class="nav__link">こんなシーンに</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Myリボンを作る</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">髪飾り一覧</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">生地の色・模様一覧</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">商品のご購入</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">工房情報</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">よくある質問</a></li>
+    </ul>
+  </nav>
+</div><!--header-->
+
+
+
+
+
+
+
+<h1>
+ <spn class="infor1">Information</spn><br>
+ <spn class="infor2">～工房情報～</spn>
+</h1>
+
+<div class="all">
+
+<h2>各種外部リンク</h2>
+
+
+<div class="box3">
+<div class="box1">
+<h3>LINE</h3>
+
+<div class="box2">
+<p class="text1">アカウント名は『紅』です。</p>
+
+<p class="gazo1">
+ <a href="#" target="_blank"><img alt="の画像" src="img/line-copy.png"></a>
+</p>
+
+</div><!--box2-->
+</div><!--box1-->
+
+
+
+
+<div class="box1">
+<h3>Instagram</h3>
+
+<div class="box2">
+<p class="text1">アカウント名は『ハンドメイド工房 Beni』です。</p>
+
+<p class="gazo1">
+ <a href="https://www.instagram.com/workshop_beni/" target="_blank"><img alt="の画像" src="img/Instagram-copy.png"></a>
+</p>
+
+</div><!--box2-->
+</div><!--box1-->
+</div><!--box3-->
+
+
+
+
+<div class="box3">
+<div class="box1">
+<h3>メルカリ</h3>
+
+<div class="box2">
+<p class="text1">アカウント名は『紅』です。</p>
+
+<p class="gazo1">
+ <a href="#" target="_blank"><img alt="の画像" src="img/mercari1-copy.png"></a>
+</p>
+
+</div><!--box2-->
+</div><!--box1-->
+
+
+
+
+<div class="box1">
+<h3>minne</h3>
+
+<div class="box2">
+<p class="text1">アカウント名は『beni-shop』です。</p>
+
+<p class="gazo1">
+ <a href="https://minne.com/@beni-shop" target="_blank"><img alt="minneの画像" src="img/minne1-copy.png"></a>
+</p>
+
+</div><!--box2-->
+</div><!--box1-->
+</div><!--box3-->
+
+
+<div class="box5">
+
+<h4>お写真募集中！</h4>
+
+購入していただいたリボンをつけたお写真大募集です！
+お顔は載せられたくないけど後ろ姿だけの写真ならいいよ、
+お顔も載せちゃってオッケーなどなど…
+リボンとのお写真であればどんなお写真でも大歓迎です！
+ご協力していただける方、各種SNSにてお写真とともに
+メッセージをくださいっ♪<br>
+
+写真載せること承諾したけどやっぱり削除してほしいな…
+と思ったら、即刻削除いたしますのでお気軽にお申し付けください！
+
+</div><!--box5-->
+
+
+<div class="box5">
+
+<h4>よくある質問</h4>
+<ol>
+ <li>送料はいくらですか？<br>
+→梱包代金と合わせて一律で500円いただいております（離島を除く）。<br>
+ただし、離島などへお届けの場合は1500円頂いております。<br>
+※海外への発送は行っておりません。</li>
+
+<br>
+
+ <li>オリジナルリボンの値段が知りたい<br>
+まずはお気軽にご連絡ください！個別メッセージにて、1つ1つ丁寧に説明させていただきますっ♪
+</li>
+<br>
+
+ <li>商品に不具合があったらどうすればいい？<br>
+　<br>
+　『<a href="商品購入1.html">こちら</a>』の『不具合のある商品について』も参照までにご覧ください。
+</li>
+<br>
+
+ <li></li>
+<br>
+
+
+
+</ol>
+
+
+
+
+</div><!--box5-->
+
+
+
+<div class="box5">
+
+<h4>キャンペーン</h4>
+
+【同時購入割引】<br>
+Myリボンを２つ以上ご購入で、1リボンにつき500円引き！<br>
+（例）リボン2つ…500円×2＝1000円引き<br>
+　　　リボン3つ…500円×3＝1500円引き<br>
+
+
+お友達同士や姉妹でお揃い、色違いのMyリボンを作ってはみませんか？
+
+</div><!--box5-->
+
+
+
+<div class="box6">
+
+<h4>お知らせ</h4>
+
+<div class="box4">
+
+
+
+
+<table>
+
+ <tr>
+   <td class="hiduke">2025.3.26</td>
+   <td>Instagramにてプレゼント企画中！応募締め切りは2025年4月30日23時59分です。ぜひご応募くださいっ！</td>
+ </tr>
+
+ <tr>
+   <td class="hiduke">2025.3.25</td>
+   <td>ハンドメイド販売サイト『minne』開設</td>
+ </tr>
+
+ <tr>
+  <td class="hiduke">2025.3.14</td>
+   <td>フリマアプリ『メルカリ』にて販売スタート</td>
+ </tr>
+
+ <tr>
+  <td class="hiduke">2025.3.6</td>
+   <td>当サイト開設</td>
+ </tr>
+
+
+ <tr>
+   <td class="hiduke">2025.1.20</td>
+   <td>Instagram開設</td>
+ </tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+</div><!--box4-->
+</div><!--box6-->
+
+
+
+</div><!--all-->
+
+<footer>
+
+
+<div class="underbox1">
+<ul class="underul1">
+ <li class="underli1"><a href="工房top5.html">TOP</a></ll>
+ <li class="underli1"><a href="想い1.html">工房Beniの想い</a></ll>
+ <li class="underli1"><a href="こんなシーンに6.html">こんなシーンに</a></ll>
+ <li class="underli1"><a href="オリジナル髪飾りを作る1.html">Myリボンを作る</a></ll>
+</ul>
+
+<ul class="underul1">
+ <li class="underli1"><a href="髪飾り一覧2.html">髪飾り一覧</a></ll>
+ <li class="underli1"><a href="布のカラー・柄一覧.html">生地の色・模様一覧</a></ll>
+ <li class="underli1"><a href="商品購入1.html">商品のご購入</a></ll>
+ <li class="underli1"><a href="工房情報1.html">工房情報</a></ll>
+ <li class="underli1"><a href="工房情報1.html">よくある質問</a></ll>
+</ul>
+
+
+<ul class="underul1">
+ <li class="underli1"><a href="">LINE</a></ll>
+ <li class="underli1"><a href="https://www.instagram.com/workshop_beni/" target="_blank"">Instagram</a></ll>
+ <li class="underli1"><a href="">メルカリ</a></ll>
+ <li class="underli1"><a href="https://minne.com/@beni-shop" target="_blank">minne</a></ll>
+</ul>
+</div><!--underbox1-->
+
+
+
+<!--
+<ul class="underul2">
+ <li class="underli2"><a href=""><img alt="ラインの画像" src="img/line.png"></a></ll>
+ <li class="underli2"><a href="https://www.instagram.com/workshop_beni/" target="_blank""><img alt="インスタの画像" src="img/Instagram-copy.png"></a></ll>
+ <li class="underli2"><a href=""><img alt="メルカリの画像" src="img/mercari1-copy.png"></a></ll>
+ <li class="underli2"><a href="https://minne.com/@beni-shop" target="_blank"><img alt="ミンネの画像" src="img/minne1-copy.png"></a></ll>
+</ul>
+</div><!--underbox1-->
+
+
+
+<p class="under">
+ Copyright &copy; 2025 handmade.kobo.Beni All rights reserved.
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
+
